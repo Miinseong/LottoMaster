@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C1A943F1899F60273B31147 /* Pods_LottoMaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6E6F7AAC78199C850506C3 /* Pods_LottoMaster.framework */; };
 		E5ABBE6C28D31E95009600E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ABBE6B28D31E95009600E8 /* AppDelegate.swift */; };
 		E5ABBE6E28D31E95009600E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ABBE6D28D31E95009600E8 /* SceneDelegate.swift */; };
 		E5ABBE7028D31E95009600E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ABBE6F28D31E95009600E8 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C6E6F7AAC78199C850506C3 /* Pods_LottoMaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LottoMaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		162649233DD97A5D43324808 /* Pods-LottoMaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LottoMaster.release.xcconfig"; path = "Target Support Files/Pods-LottoMaster/Pods-LottoMaster.release.xcconfig"; sourceTree = "<group>"; };
+		2A5FC6592480644F7A953702 /* Pods-LottoMaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LottoMaster.debug.xcconfig"; path = "Target Support Files/Pods-LottoMaster/Pods-LottoMaster.debug.xcconfig"; sourceTree = "<group>"; };
 		E5ABBE6828D31E95009600E8 /* LottoMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LottoMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5ABBE6B28D31E95009600E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5ABBE6D28D31E95009600E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C1A943F1899F60273B31147 /* Pods_LottoMaster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C3F19D11C51FB0E001BC896 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A5FC6592480644F7A953702 /* Pods-LottoMaster.debug.xcconfig */,
+				162649233DD97A5D43324808 /* Pods-LottoMaster.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E5ABBE5F28D31E95009600E8 = {
 			isa = PBXGroup;
 			children = (
 				E5ABBE6A28D31E95009600E8 /* LottoMaster */,
 				E5ABBE6928D31E95009600E8 /* Products */,
+				1C3F19D11C51FB0E001BC896 /* Pods */,
+				F1BF58AC1D50D3E6208B874D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +83,14 @@
 			path = LottoMaster;
 			sourceTree = "<group>";
 		};
+		F1BF58AC1D50D3E6208B874D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C6E6F7AAC78199C850506C3 /* Pods_LottoMaster.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5ABBE7C28D31E96009600E8 /* Build configuration list for PBXNativeTarget "LottoMaster" */;
 			buildPhases = (
+				5E821309EEB274677D319A99 /* [CP] Check Pods Manifest.lock */,
 				E5ABBE6428D31E95009600E8 /* Sources */,
 				E5ABBE6528D31E95009600E8 /* Frameworks */,
 				E5ABBE6628D31E95009600E8 /* Resources */,
+				E5ABBE7F28D31F86009600E8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E821309EEB274677D319A99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LottoMaster-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5ABBE7F28D31F86009600E8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint autocorrect\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E5ABBE6428D31E95009600E8 /* Sources */ = {
@@ -284,6 +352,7 @@
 		};
 		E5ABBE7D28D31E96009600E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A5FC6592480644F7A953702 /* Pods-LottoMaster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +380,7 @@
 		};
 		E5ABBE7E28D31E96009600E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 162649233DD97A5D43324808 /* Pods-LottoMaster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
