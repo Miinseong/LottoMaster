@@ -62,7 +62,7 @@ final class ViewController: UIViewController {
   // 네트워크통신을 통한 26회차분 로또 번호들 가져오기
   private func makeLottoList() {
     let endGameNumber = 1034
-    let startGameNumber = endGameNumber - 26
+    let startGameNumber = endGameNumber - 25
 
     for gameNumber in startGameNumber...endGameNumber {
       net.networking(number: gameNumber) { result in
