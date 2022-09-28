@@ -14,6 +14,8 @@
 		E5ABBE7328D31E95009600E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5ABBE7128D31E95009600E8 /* Main.storyboard */; };
 		E5ABBE7528D31E96009600E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5ABBE7428D31E96009600E8 /* Assets.xcassets */; };
 		E5ABBE7828D31E96009600E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5ABBE7628D31E96009600E8 /* LaunchScreen.storyboard */; };
+		E5ABBE8128D978B7009600E8 /* network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ABBE8028D978B7009600E8 /* network.swift */; };
+		E5ABBE8328D97DBB009600E8 /* json.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ABBE8228D97DBB009600E8 /* json.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		E5ABBE7428D31E96009600E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5ABBE7728D31E96009600E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5ABBE7928D31E96009600E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5ABBE8028D978B7009600E8 /* network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = network.swift; sourceTree = "<group>"; };
+		E5ABBE8228D97DBB009600E8 /* json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = json.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 				E5ABBE7428D31E96009600E8 /* Assets.xcassets */,
 				E5ABBE7628D31E96009600E8 /* LaunchScreen.storyboard */,
 				E5ABBE7928D31E96009600E8 /* Info.plist */,
+				E5ABBE8028D978B7009600E8 /* network.swift */,
+				E5ABBE8228D97DBB009600E8 /* json.swift */,
 			);
 			path = LottoMaster;
 			sourceTree = "<group>";
@@ -208,6 +214,8 @@
 			files = (
 				E5ABBE7028D31E95009600E8 /* ViewController.swift in Sources */,
 				E5ABBE6C28D31E95009600E8 /* AppDelegate.swift in Sources */,
+				E5ABBE8328D97DBB009600E8 /* json.swift in Sources */,
+				E5ABBE8128D978B7009600E8 /* network.swift in Sources */,
 				E5ABBE6E28D31E95009600E8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
